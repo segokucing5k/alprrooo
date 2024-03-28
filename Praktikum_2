@@ -1,0 +1,123 @@
+# NOMOR 1 COY ----------------------------------------------
+x = float(input("Urine Color (0-8) : " ))
+gender = str(input("gender (M/F) : " ))
+
+if( 3.0 < x < 5.5 ):
+    print("Euhydated")
+elif (5.5 < x <= 8.0):
+    print("Dehydrated")
+elif(0 <= x <= 3.0):
+    print("Hyperhydrated")
+else:
+    print("Input range 0-8")
+
+# NOMOR 2 COY ----------------------------------------------
+r1 = float(input("Nilai R1 : " ))
+r2 = float(input("Nilai R2 : " ))
+
+vsensor = (r2/(r1+r2)) * 5
+asensor = (r1/(r1+r2)) * 2.4
+
+if(vsensor >= 2.5 and asensor <= 1.2):
+    print("Kombinasi resistor memenuhi spesifikasi")
+else:
+    print("kombinasi tidak memenuhi")
+
+# NOMOR 3 COY ----------------------------------------------
+
+src = str(input("Cari sisi segitiga yang mana? (A/B/C)"))
+a = float(input("Nilai a : " ))
+b = float(input("Nilai b : " ))
+
+if(src == 'C'):
+    hasil = (a**2 + b**2)**0.5 
+else:
+    if(a > b):
+        d = a
+        e = b
+    else:
+        d = b
+        e = a
+    hasil = (d**2 - e**2)**0.5
+
+print(src, "hasilnya = ", hasil)
+
+# NOMOR 4 COY ----------------------------------------------
+
+gaji = float(input("Masukkan gaji : " ))   
+npwp = str(input("Apakah punya NPWP? (y/n) " ))
+pajak = 0
+
+if(gaji < 60000000):
+    pajak = (gaji * 0.05)
+elif(60000000 <= gaji < 250000000):
+    pajak = (gaji * 0.15)
+elif(250000000 <= gaji < 500000000):
+    pajak = (gaji * 0.25)
+elif(500000000 <= gaji < 5000000000):
+    pajak = (gaji * 0.3)
+else:
+    pajak = (gaji * 0.35)
+if(npwp == 'n'):
+    pajak += (gaji * 0.2)
+gaji -= pajak
+print(gaji)
+
+# NOMOR 5 COY ----------------------------------------------
+
+age = int(input("Umur : " ))
+gender = str(input("gender (l/p) : " ))
+hr = int(input("heart rate : " ))
+
+if(gender == 'l'):
+    if(18 <= age <= 25 or 36 <= age <= 45):
+        if(61 <= hr <= 69):
+            print("EXCELLENT")
+        elif(70 <= hr <= 76):
+            print("AVERAGE")
+        else:
+            print("POOR")
+    elif(46 <= age <= 75):
+        if(60 <= hr <= 68):
+            print("EXCELLENT")
+        elif(69 <= hr <= 77):
+            print("AVERAGE")
+        else:
+            print("POOR")
+    else:
+        if(60 <= hr <= 68):
+            print("EXCELLENT")
+        elif(69 <= hr <= 76):
+            print("AVERAGE")
+        else:
+            print("POOR")
+elif(gender == 'p'):
+    if(18 <= age <= 25):
+        if(56 <= hr <= 65):
+            print("EXCELLENT")
+        elif(66 <= hr <= 73):
+            print("AVERAGE")
+        else:
+            print("POOR")
+    elif(26 <= age <= 35):
+        if(55 <= hr <= 65):
+            print("EXCELLENT")
+        elif(66 <= hr <= 74):
+            print("AVERAGE")
+        else:
+            print("POOR")
+    elif(46 <= age <= 55):
+        if(58 <= hr <= 67):
+            print("EXCELLENT")
+        elif(68 <= hr <= 76):
+            print("AVERAGE")
+        else:
+            print("POOR")
+    else:
+        if(57 <= hr <= 66):
+            print("EXCELLENT")
+        elif(67 <= hr <= 75):
+            print("AVERAGE")
+        else:
+            print("POOR")
+
