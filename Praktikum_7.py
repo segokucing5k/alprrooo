@@ -1,3 +1,4 @@
+####################################### no 1
 len = 12.45
 dia = 13.6
 pi = 3.14
@@ -12,6 +13,7 @@ elif(vol > 2099.11):
     print("hepatomegaly")
 
 
+################################## no 2
 x = 5
 y = 10
 
@@ -23,6 +25,8 @@ print("x**y = ", x**y)
 print("x == y = ", x == y)
 print("x != y = ", x != y)
 
+#################################### no 3
+
 num = int(input("Enter a number: "))
 factorial = 1
 number = 1
@@ -30,6 +34,8 @@ while (number <= num):
     factorial *= number
     number += 1
 print(factorial)
+
+###################################### no 4
 
 kalimat = input("Enter a sentence: ")
 kal = kalimat.split()
@@ -42,6 +48,7 @@ for kata in kal:
 
 print(pesan)
 
+###################################### no 5
 
 data = [120, 131, 125, 140, 130, 119, 128, 115, 127, 150]
 for i in data:
